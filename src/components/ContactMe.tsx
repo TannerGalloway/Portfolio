@@ -45,12 +45,12 @@ const ContactMe: React.FC = function ContactMe() {
     if (state.submitting) {
       return "bg-green-600";
     }
-    return "bg-green-500 hover:bg-green-400 transition-colors hover:scale-103 cursor-pointer";
+    return "bg-green-500 hover:bg-green-400 hover:scale-103 transition-all duration-300 cursor-pointer";
   };
 
   return (
-    // Header
-    <section className="py-20">
+    <section id="contact" className="py-20">
+      {/* Header */}
       <div className="mb-12">
         <div className="flex items-center space-x-2 text-sm font-mono text-gray-400 mb-2">
           <div className="h-px w-5 bg-green-500"></div>
@@ -66,7 +66,7 @@ const ContactMe: React.FC = function ContactMe() {
       <div className="grid md:grid-cols-2 gap-8">
         {/* Contact Form */}
         <div className="form-card-container">
-          <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-6 hover:border-green-500/50 transition-colors">
+          <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-6 hover:border-green-500/50 transition-colors duration-300">
             <h3 className="text-xl font-bold mb-6">Send Me a Message</h3>
 
             {state.succeeded && statusMessageVisable ? (
@@ -193,7 +193,7 @@ const ContactMe: React.FC = function ContactMe() {
 
         {/* Contact Info */}
         <div className="contact-links-card-container">
-          <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-6 hover:border-green-500/50 transition-colors">
+          <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-6 hover:border-green-500/50 transition-colors duration-300">
             <h3 className="text-xl font-bold mb-6">Connect With Me</h3>
 
             <div className="grid grid-cols-2 gap-4">
@@ -201,7 +201,7 @@ const ContactMe: React.FC = function ContactMe() {
                 href="https://github.com/TannerGalloway"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col items-center justify-center bg-gray-800/50 p-4 rounded-lg hover:bg-gray-800 transition-colors transition-transform duration-300 ease-in-out hover:-translate-y-2">
+                className="flex flex-col items-center justify-center bg-gray-800/50 p-4 rounded-lg hover:bg-gray-800 hover:-translate-y-2 transition-all duration-300">
                 <Github className="h-6 w-6 text-white mb-2" />
                 <span className="text-sm text-gray-400">GitHub</span>
               </a>
@@ -210,7 +210,7 @@ const ContactMe: React.FC = function ContactMe() {
                 href="https://www.linkedin.com/in/tanner-galloway-094970183"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col items-center justify-center bg-gray-800/50 p-4 rounded-lg hover:bg-gray-800 transition-colors transition-transform duration-300 ease-in-out hover:-translate-y-2">
+                className="flex flex-col items-center justify-center bg-gray-800/50 p-4 rounded-lg hover:bg-gray-800 hover:-translate-y-2 transition-all duration-300">
                 <Linkedin className="h-6 w-6 text-white mb-2" />
                 <span className="text-sm text-gray-400">LinkedIn</span>
               </a>
