@@ -1,0 +1,16 @@
+{
+  "skills": [
+    {
+      "name": "Frontend Development",
+      "items": ["HTML", "CSS", "JavaScript", "TypeScript", "React"]
+    },
+    {
+      "name": "Backend Development",
+      "items": ["Node.js", "PostgreSQL", "REST APIs"]
+    },
+    {
+      "name": "Tools",
+      "items": ["Git", "Github", "Azure Devops"]
+    }
+  ]
+}
