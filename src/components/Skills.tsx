@@ -20,6 +20,7 @@ const Skills: React.FC = function Skills() {
 
   return (
     <section className="py-20">
+      {/* Header */}
       <div className="mb-12">
         <div className="flex items-center space-x-2 text-sm font-mono text-gray-400 mb-2">
           <div className="h-px w-5 bg-green-500"></div>
@@ -34,11 +35,12 @@ const Skills: React.FC = function Skills() {
         </p>
       </div>
 
+      {/* Skill Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {skillsList.skills.map((skill, index) => (
           <div
             key={`card ${index}`}
-            className="bg-gray-900/50 border border-gray-800 rounded-lg p-6 hover:border-green-500/50 transition-colors">
+            className="bg-gray-900/50 border border-gray-800 rounded-lg p-6 hover:border-green-500/50 transition-colors duration-300">
             <div className="flex items-center mb-4">
               <div className="mr-3 text-green-500">{getIcon(index)}</div>
               <h3 className="text-xl font-bold">{skill.name}</h3>

@@ -23,7 +23,7 @@ const AboutMe: React.FC = function AboutMe() {
       <div className="flex justify-between lg:gap-12">
         {/* Left column - Bio and Interests */}
         <div className="space-y-8 lg:w-1/2">
-          <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-6 hover:border-green-500/50 transition-colors">
+          <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-6 hover:border-green-500/50 transition-colors duration-300">
             <h3 className="text-xl font-bold mb-4">My Journey</h3>
             <p className="text-gray-400 mb-6">
               I'm a software developer with a interest in how technology can
@@ -39,7 +39,7 @@ const AboutMe: React.FC = function AboutMe() {
             </p>
           </div>
 
-          <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-6 hover:border-green-500/50 transition-colors">
+          <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-6 hover:border-green-500/50 transition-colors duration-300">
             <h3 className="text-xl font-bold mb-4 flex items-center">
               <Heart className="mr-2 h-5 w-5 text-green-500" />
               Personal Interests
@@ -64,11 +64,11 @@ const AboutMe: React.FC = function AboutMe() {
 
         {/* Right column - Profile image*/}
         <div className="space-y-6 hidden lg:block">
-          <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-6 w-fit h-fit hover:border-green-500/50 transition-colors">
+          <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-6 w-fit h-fit hover:border-green-500/50 transition-colors duration-300">
             <div className="mb-6 overflow-hidden rounded-lg">
               <img
                 src="https://placehold.co/333x333"
-                alt="Profile"
+                alt="Profile Picture"
                 loading="lazy"
               />
             </div>
