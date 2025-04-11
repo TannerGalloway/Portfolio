@@ -66,18 +66,18 @@ const ContactMe: React.FC = function ContactMe() {
       <div className="grid md:grid-cols-2 gap-8">
         {/* Contact Form */}
         <div className="form-card-container">
-          <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-6 hover:border-green-500/50 transition-colors duration-300">
+          <div className="bg-gray-900 border border-gray-800 rounded-lg p-6 hover:border-green-500 transition-colors duration-300 contact-card">
             <h3 className="text-xl font-bold mb-6">Send Me a Message</h3>
 
             {state.succeeded && statusMessageVisable ? (
-              <div className="bg-green-500/20 border border-green-500/50 rounded-lg p-4 text-green-400 mb-4">
+              <div className="bg-green-500 border border-green-500 rounded-lg p-4 text-green-400 mb-4">
                 Thank you for your message! I'll get back to you as soon as
                 possible.
               </div>
             ) : null}
 
             {state.errors && statusMessageVisable ? (
-              <div className="bg-red-500/20 border border-red-500/50 rounded-lg p-4 text-red-400 mb-4">
+              <div className="bg-red-500 border border-red-500 rounded-lg p-4 text-red-400 mb-4">
                 An error occurred while submitting the form. Please try again.
               </div>
             ) : null}
@@ -97,7 +97,7 @@ const ContactMe: React.FC = function ContactMe() {
                   onChange={handleInputChange}
                   required
                   disabled={state.submitting}
-                  className="w-full px-4 py-2 bg-gray-800/50 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500/50 focus:border-transparent text-white"
+                  className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent text-white"
                   placeholder="Your name"
                 />
                 <ValidationError
@@ -121,7 +121,7 @@ const ContactMe: React.FC = function ContactMe() {
                   onChange={handleInputChange}
                   required
                   disabled={state.submitting}
-                  className="w-full px-4 py-2 bg-gray-800/50 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500/50 focus:border-transparent text-white"
+                  className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent text-white"
                   placeholder="your.email@example.com"
                 />
                 <ValidationError
@@ -145,7 +145,7 @@ const ContactMe: React.FC = function ContactMe() {
                   required
                   disabled={state.submitting}
                   rows={5}
-                  className="w-full px-4 py-2 bg-gray-800/50 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500/50 focus:border-transparent text-white resize-none"
+                  className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent text-white resize-none"
                   placeholder="Your message..."
                 />
                 <ValidationError
@@ -158,7 +158,7 @@ const ContactMe: React.FC = function ContactMe() {
               <button
                 type="submit"
                 disabled={state.submitting}
-                className={`w-full px-6 py-3 text-black rounded-md flex justify-center ${getSubmitButtonStyle()}`}>
+                className={`w-full px-6 py-3 text-black rounded-md flex justify-center ${getSubmitButtonStyle()} contact-button`}>
                 {state.submitting ? (
                   <span className="flex items-center">
                     <svg
@@ -193,7 +193,7 @@ const ContactMe: React.FC = function ContactMe() {
 
         {/* Contact Info */}
         <div className="contact-links-card-container">
-          <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-6 hover:border-green-500/50 transition-colors duration-300">
+          <div className="bg-gray-900 border border-gray-800 rounded-lg p-6 hover:border-green-500 transition-colors duration-300 contact-card">
             <h3 className="text-xl font-bold mb-6">Connect With Me</h3>
 
             <div className="grid grid-cols-2 gap-4">
@@ -201,7 +201,7 @@ const ContactMe: React.FC = function ContactMe() {
                 href="https://github.com/TannerGalloway"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col items-center justify-center bg-gray-800/50 p-4 rounded-lg hover:bg-gray-800 hover:-translate-y-2 transition-all duration-300">
+                className="flex flex-col items-center justify-center bg-gray-800 p-4 rounded-lg hover:bg-gray-800 hover:-translate-y-2 transition-all duration-300 social-link">
                 <Github className="h-6 w-6 text-white mb-2" />
                 <span className="text-sm text-gray-400">GitHub</span>
               </a>
@@ -210,7 +210,7 @@ const ContactMe: React.FC = function ContactMe() {
                 href="https://www.linkedin.com/in/tanner-galloway-094970183"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col items-center justify-center bg-gray-800/50 p-4 rounded-lg hover:bg-gray-800 hover:-translate-y-2 transition-all duration-300">
+                className="flex flex-col items-center justify-center bg-gray-800 p-4 rounded-lg hover:bg-gray-800 hover:-translate-y-2 transition-all duration-300 social-link">
                 <Linkedin className="h-6 w-6 text-white mb-2" />
                 <span className="text-sm text-gray-400">LinkedIn</span>
               </a>
