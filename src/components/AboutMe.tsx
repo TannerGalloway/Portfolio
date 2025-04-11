@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { Heart } from "lucide-react";
+import ProfilePic from "../assets/TannerProfilePicture.jpg";
 
 const AboutMe: React.FC = function AboutMe() {
   return (
@@ -66,11 +67,7 @@ const AboutMe: React.FC = function AboutMe() {
         <div className="space-y-6 hidden lg:block">
           <div className="bg-gray-900 border border-gray-800 rounded-lg p-6 w-fit h-fit hover:border-green-500 transition-colors duration-300 about-card">
             <div className="mb-6 overflow-hidden rounded-lg">
-              <img
-                src="https://placehold.co/333x333"
-                alt="Profile Picture"
-                loading="lazy"
-              />
+              <img src={ProfilePic} alt="Profile Picture" loading="lazy" />
             </div>
             <h3 className="text-xl font-bold mb-2">Tanner Galloway</h3>
             <p className="text-green-500 mb-1">Software Developer</p>
