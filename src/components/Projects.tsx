@@ -31,7 +31,7 @@ const Projects: React.FC = function Projects() {
             key={`projectLink-${project.id}`}>
             <div
               key={`project-${project.id}`}
-              className="group overflow-hidden rounded-lg bg-gray-900/50 border border-gray-800 transition-all duration-300 hover:border-green-500/50 hover:-translate-y-2">
+              className="group overflow-hidden rounded-lg bg-gray-900 border border-gray-800 transition-all duration-300 hover:border-green-500 hover:-translate-y-2 project-card">
               {/* Project Image */}
               <div className="overflow-hidden relative">
                 <img

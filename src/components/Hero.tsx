@@ -33,7 +33,7 @@ const Hero: React.FC = function Hero() {
                   projectsSection.scrollIntoView({ behavior: "smooth" });
                 }
               }}
-              className="px-6 py-3 bg-green-500 text-black font-medium rounded-md hover:bg-green-400 transition-colors duration-300">
+              className="px-6 py-3 bg-green-500 text-black font-medium rounded-md hover:bg-green-400 transition-colors duration-300 hero-button">
               View Projects
             </a>
 
@@ -46,7 +46,7 @@ const Hero: React.FC = function Hero() {
                   contactSection.scrollIntoView({ behavior: "smooth" });
                 }
               }}
-              className="px-6 py-3 border border-green-500 text-green-500 font-medium rounded-md hover:bg-green-500/20 transition-colors duration-300">
+              className="px-6 py-3 border border-green-500 text-green-500 font-medium rounded-md hover:bg-green-500/20 transition-colors duration-300 hero-button">
               Contact Me
             </a>
           </div>

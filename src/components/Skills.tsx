@@ -40,7 +40,7 @@ const Skills: React.FC = function Skills() {
         {skillsList.skills.map((skill, index) => (
           <div
             key={`card ${index}`}
-            className="bg-gray-900/50 border border-gray-800 rounded-lg p-6 hover:border-green-500/50 transition-colors duration-300">
+            className="bg-gray-900 border border-gray-800 rounded-lg p-6 hover:border-green-500 transition-colors duration-300 skill-card">
             <div className="flex items-center mb-4">
               <div className="mr-3 text-green-500">{getIcon(index)}</div>
               <h3 className="text-xl font-bold">{skill.name}</h3>
