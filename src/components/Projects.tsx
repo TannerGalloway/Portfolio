@@ -37,7 +37,7 @@ const Projects: React.FC = function Projects() {
                 <img
                   src={project.image || "https://placehold.co/400x400"}
                   alt={project.title}
-                  className="object-cover transition-transform duration-300 group-hover:scale-110"
+                  className="object-cover transition-transform duration-300 h-128 w-full"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-80"></div>
 
