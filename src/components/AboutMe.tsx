@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Heart } from "lucide-react";
-import ProfilePic from "../assets/TannerProfilePicture.jpg";
+import ProfilePic from "/tannerProfilePicture.jpg";
 
 const AboutMe: React.FC = function AboutMe() {
   return (
