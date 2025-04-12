@@ -35,7 +35,10 @@ const Projects: React.FC = function Projects() {
               {/* Project Image */}
               <div className="overflow-hidden relative">
                 <img
-                  src={project.image || "https://placehold.co/400x400"}
+                  src={
+                    `${import.meta.env.BASE_URL}${project.image}` ||
+                    "https://placehold.co/400x400"
+                  }
                   alt={project.title}
                   className="object-cover transition-transform duration-300 h-128 w-full"
                 />
