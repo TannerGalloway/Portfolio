@@ -36,7 +36,7 @@ const AboutMe: React.FC = function AboutMe() {
               What excites me most about software development is the constant
               evolution of technologies and the endless opportunities to learn
               and grow. I thrive in collaborative environments where I can
-              contribute my technical expertise while also learning from others.
+              contribute my technical knowledge nwhile also learning from others.
             </p>
           </div>
 
