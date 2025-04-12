@@ -5,7 +5,7 @@
       "title": "Inkprov",
       "description": "A real-time collabrative writing app that allows users to create and share stories using the Improv concept of \"yes... and\".",
       "tags": ["React", "TypeScript", "Tailwind CSS", "Node.js", "PostgreSQL"],
-      "image": "./Portfolio/src/assets/inkprov.png",
+      "image": "./src/assets/inkprov.png",
       "link": "http://www.inkprov.net/"
     },
     {
@@ -13,7 +13,7 @@
       "title": "ExploreNation",
       "description": "A mobile travel app that helps you find and explore amazing attractions around the world or near you.",
       "tags": ["React Native", "Node.js", "PostgreSQL", "Google Maps API"],
-      "image": "./Portfolio/src/assets/exploreNation.png",
+      "image": "./src/assets/exploreNation.png",
       "link": "https://github.com/TannerGalloway/ExploreNation"
     },
     {
@@ -21,7 +21,7 @@
       "title": "Gourmet Guide",
       "description": "An application for users to explore and discover different foods from around the world.",
       "tags": ["React", "MealDB API"],
-      "image": "./Portfolio/src/assets/gourmetGuide.png",
+      "image": "./src/assets/gourmetGuide.png",
       "link": "https://gourmet-guide-zpn6.onrender.com"
     }
   ]
