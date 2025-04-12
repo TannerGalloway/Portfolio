@@ -28,7 +28,7 @@ const ContactMe: React.FC = function ContactMe() {
     handleSubmit(formState);
   };
 
-  // Auto hide status message after 3 seconds
+  // Auto hide status message after 5 seconds
   useEffect(() => {
     if (state.succeeded || state.errors) {
       if (state.succeeded) {
@@ -36,7 +36,7 @@ const ContactMe: React.FC = function ContactMe() {
       }
       const timeoutId = setTimeout(() => {
         setStatusMessageVisable(false);
-      }, 3000);
+      }, 5000);
       return () => clearTimeout(timeoutId);
     }
   }, [state.succeeded, state.errors]);
@@ -70,14 +70,14 @@ const ContactMe: React.FC = function ContactMe() {
             <h3 className="text-xl font-bold mb-6">Send Me a Message</h3>
 
             {state.succeeded && statusMessageVisable ? (
-              <div className="bg-green-500 border border-green-500 rounded-lg p-4 text-green-400 mb-4">
+              <div className="bg-green-500 border border-green-500 rounded-lg p-4 text-black mb-4">
                 Thank you for your message! I'll get back to you as soon as
                 possible.
               </div>
             ) : null}
 
             {state.errors && statusMessageVisable ? (
-              <div className="bg-red-500 border border-red-500 rounded-lg p-4 text-red-400 mb-4">
+              <div className="bg-red-500 border border-red-500 rounded-lg p-4 text-black mb-4">
                 An error occurred while submitting the form. Please try again.
               </div>
             ) : null}
