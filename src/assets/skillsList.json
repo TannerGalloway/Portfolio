@@ -10,7 +10,7 @@
     },
     {
       "name": "Tools",
-      "items": ["Git", "Github", "Azure Devops"]
+      "items": ["Git", "Github", "Azure Devops, Postman"]
     }
   ]
 }
