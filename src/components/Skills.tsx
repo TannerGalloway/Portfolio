@@ -1,5 +1,3 @@
-"use client";
-
 import type React from "react";
 import { Code, Server, Layout } from "lucide-react";
 import skillsList from "../assets/skillsList.json";
