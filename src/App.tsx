@@ -13,8 +13,8 @@ const App: React.FC = function App() {
       <div className="container mx-auto px-4">
         <Hero />
         <AboutMe />
-        <Projects />
         <Skills />
+        <Projects />
         <ContactMe />
       </div>
     </>

@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import { Heart } from "lucide-react";
 import ProfilePic from "/tannerProfilePicture.jpg";
