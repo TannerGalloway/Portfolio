@@ -34,7 +34,7 @@
       "id": 4,
       "title": "Hype Games",
       "description": "A platform for gamers to get info about the latest games, including screenshots and trailers.",
-      "tags": ["JavaScript", "Jinja", "flask", "sqlite", "IGDBAPI"],
+      "tags": ["JavaScript", "Jinja", "Flask", "Sqlite", "IGDB API"],
       "image": "hypeGames.png",
       "videoUrl": "https://streamable.com/e/1ki3tl?loop=0&muted=1",
       "codeUrl": "https://github.com/TannerGalloway/Hype-Games",

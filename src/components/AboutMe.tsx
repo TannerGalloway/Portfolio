@@ -53,10 +53,10 @@ const AboutMe: React.FC = function AboutMe() {
                 <div className="text-white font-medium">Travel</div>
               </div>
               <div className="bg-gray-800 p-3 rounded-md text-center">
-                <div className="text-white font-medium">Learning</div>
+                <div className="text-white font-medium">Psychology</div>
               </div>
               <div className="bg-gray-800 p-3 rounded-md text-center">
-                <div className="text-white font-medium">Psychology</div>
+                <div className="text-white font-medium">Japanese Culture</div>
               </div>
             </div>
           </div>
