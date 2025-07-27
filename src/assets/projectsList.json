@@ -6,7 +6,7 @@
       "description": "A real-time collabrative writing app that allows users to create and share stories using the Improv concept of \"yes... and\".",
       "tags": ["React", "TypeScript", "Tailwind CSS", "Node.js", "PostgreSQL"],
       "image": "inkprov.png",
-      "videoUrl": "https://streamable.com/e/p2bw76?loop=0&muted=1",
+      "videoUrl": "https://streamable.com/e/owvx91?loop=0&muted=1",
       "codeUrl": "https://github.com/TeamTandamett/inkprov",
       "liveUrl": "https://www.inkprov.net/"
     },
@@ -16,7 +16,7 @@
       "description": "A mobile travel app that helps you find and explore amazing attractions around the world or near you.",
       "tags": ["React Native", "Node.js", "PostgreSQL", "Google Maps API"],
       "image": "exploreNation.png",
-      "videoUrl": "https://streamable.com/e/tphr1t?loop=0&muted=1",
+      "videoUrl": "https://streamable.com/e/r3pm71?loop=0&muted=1",
       "codeUrl": "https://github.com/TannerGalloway/ExploreNation",
       "liveUrl": "#"
     },
@@ -26,7 +26,7 @@
       "description": "An application for users to explore and discover different foods from around the world.",
       "tags": ["React", "MealDB API"],
       "image": "gourmetGuide.png",
-      "videoUrl": "https://streamable.com/e/d97zph?loop=0&muted=1",
+      "videoUrl": "https://streamable.com/e/fp7drj?loop=0&muted=1",
       "codeUrl": "https://github.com/TannerGalloway/Gourmet-Guide",
       "liveUrl": "https://gourmet-guide-zpn6.onrender.com"
     },
@@ -36,7 +36,7 @@
       "description": "A platform for gamers to get info about the latest games, including screenshots and trailers.",
       "tags": ["JavaScript", "Jinja", "Flask", "Sqlite", "IGDB API"],
       "image": "hypeGames.png",
-      "videoUrl": "https://streamable.com/e/1ki3tl?loop=0&muted=1",
+      "videoUrl": "https://streamable.com/e/j0m6w2?loop=0&muted=1",
       "codeUrl": "https://github.com/TannerGalloway/Hype-Games",
       "liveUrl": "#"
     },
@@ -52,7 +52,7 @@
         "Google Maps API"
       ],
       "image": "whatsEat.png",
-      "videoUrl": "https://streamable.com/e/kbh7w2?loop=0&muted=1",
+      "videoUrl": "https://streamable.com/e/sj5kr7?loop=0&muted=1",
       "codeUrl": "https://github.com/Greenfield-app/frontend",
       "liveUrl": "#"
     },
@@ -62,7 +62,7 @@
       "description": "A Terminal based text adventure game where you play as a hero and must navigate a dungeon filled with monsters and treasure.",
       "tags": ["Java"],
       "image": "runeBound.png",
-      "videoUrl": "https://streamable.com/e/xc4zzo?loop=0&muted=1",
+      "videoUrl": "https://streamable.com/e/6330n0?loop=0&muted=1",
       "codeUrl": "https://github.com/TannerGalloway/Runebound",
       "liveUrl": "#"
     }
