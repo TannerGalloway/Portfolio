@@ -1,16 +1,37 @@
 {
   "skills": [
     {
-      "name": "Frontend Development",
-      "items": ["HTML", "CSS", "JavaScript", "TypeScript", "React"]
+      "name": "Tech Stack",
+      "items": [
+        "HTML",
+        "Node.js",
+        "CSS",
+        "Python",
+        "JavaScript",
+        "PostgreSQL",
+        "TypeScript",
+        "REST API Design",
+        "React"
+      ]
     },
     {
-      "name": "Backend Development",
-      "items": ["Node.js", "PostgreSQL", "REST APIs"]
+      "name": "Functional / Non-Functional Testing",
+      "items": [
+        "Smoke",
+        "Performance",
+        "Regression",
+        "Localization",
+        "Integration",
+        "Accessibility",
+        "Sanity",
+        "End-to-end",
+        "Configuration",
+        "Compatibility"
+      ]
     },
     {
       "name": "Tools",
-      "items": ["Git", "Github", "Azure Devops", "Postman"]
+      "items": ["Git", "Github", "Azure Devops", "Postman", "Fiddler"]
     }
   ]
 }

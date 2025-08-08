@@ -1,17 +1,21 @@
 import React, { useEffect, useRef } from "react";
 
-const GridBackground: React.FC = function GridBackground() {
+interface GridBackgroundProps {
+  currentTab: string;
+}
+
+const GridBackground: React.FC<GridBackgroundProps> = ({ currentTab }) => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const activeCellsRef = useRef<any[]>([]); // Reference to track active squares across renders
   const hoverStateRef = useRef(false); // Reference to track hover state across event handlers
 
   // Active glowing cell data
   type Cell = {
-    x: number; // Grid cell X position
-    y: number; // Grid cell Y position
-    intensity: number; // Current glow intensity
-    fadeSpeed: number; // How quickly the cell fades out
-    lastActive: number; // Timestamp when the cell was last active
+    x: number;
+    y: number;
+    intensity: number;
+    fadeSpeed: number;
+    lastActiveTime: number;
   };
 
   useEffect(() => {
@@ -135,10 +139,9 @@ const GridBackground: React.FC = function GridBackground() {
 
       const radius = 1; // How many cells away from the mouse to illuminate
 
-      // Randomly select up to 3 nearby cells
+      // Pick a random cell within the radius of the mouse
       for (let i = 0; i < 3; i++) {
         if (Math.random() < 0.3) {
-          // Pick a random cell within the radius of the mouse
           const randomOffsetX =
             Math.floor(Math.random() * (radius * 2 + 1)) - radius;
           const randomOffsetY =
@@ -178,7 +181,7 @@ const GridBackground: React.FC = function GridBackground() {
 
         // Update intensity if the new value is higher
         cell.intensity = Math.max(cell.intensity, intensity);
-        cell.lastActive = now;
+        cell.lastActiveTime = now;
       } else {
         // Add new cell
         const fadeSpeed = 0.02;
@@ -188,7 +191,7 @@ const GridBackground: React.FC = function GridBackground() {
           y,
           intensity,
           fadeSpeed,
-          lastActive: now,
+          lastActiveTime: now,
         });
       }
     };
@@ -208,7 +211,7 @@ const GridBackground: React.FC = function GridBackground() {
         const cell = activeCells[i];
 
         // Start fading out cells that have been inactive for a while or if the mouse has stopped moving or if the mouse is hovering over a card or interactive element
-        const timeSinceActive = now - cell.lastActive;
+        const timeSinceActive = now - cell.lastActiveTime;
 
         if (
           timeSinceActive > 100 ||
@@ -233,14 +236,13 @@ const GridBackground: React.FC = function GridBackground() {
       requestAnimationFrame(animate);
     };
 
-    // Add event listeners to detect when hovering over cards or interactive elements
     const setupCardHoverListeners = () => {
       const cardContainers = document.querySelectorAll(
         ".card-container, .right-container, .about-card, .project-card, .skill-card, .contact-card"
       );
 
       const interactiveElements = document.querySelectorAll(
-        ".hero-button, .contact-button, .social-link"
+        ".hero-button, .contact-button, .project-toggle,.social-link"
       );
 
       const handleMouseEnter = () => {
@@ -252,12 +254,13 @@ const GridBackground: React.FC = function GridBackground() {
 
         const relatedTarget = mouseEvent.relatedTarget as HTMLElement;
 
-        // Only set hovering to false if we're not entering another card or interactive element
+        // Only set hovering to false if the user is leaving another card or interactive element
         if (
           !relatedTarget ||
           (!relatedTarget.closest(".card-container") &&
             !relatedTarget.closest(".about-card") &&
             !relatedTarget.closest(".right-container") &&
+            !relatedTarget.closest(".project-toggle") &&
             !relatedTarget.closest(".project-card") &&
             !relatedTarget.closest(".skill-card") &&
             !relatedTarget.closest(".contact-card") &&
@@ -310,7 +313,7 @@ const GridBackground: React.FC = function GridBackground() {
         });
       }
     };
-  }, []);
+  }, [currentTab]);
 
   return (
     <canvas

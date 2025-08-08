@@ -1,45 +1,49 @@
 {
-  "projects": [
+  "builtApps": [
     {
       "id": 1,
       "title": "Inkprov",
       "description": "A real-time collabrative writing app that allows users to create and share stories using the Improv concept of \"yes... and\".",
       "tags": ["React", "TypeScript", "Tailwind CSS", "Node.js", "PostgreSQL"],
       "image": "inkprov.png",
-      "videoUrl": "https://streamable.com/e/p2bw76?loop=0&muted=1",
+      "videoUrl": "https://streamable.com/e/owvx91?loop=0&muted=1",
       "codeUrl": "https://github.com/TeamTandamett/inkprov",
       "liveUrl": "https://www.inkprov.net/"
     },
+
     {
       "id": 2,
       "title": "ExploreNation",
       "description": "A mobile travel app that helps you find and explore amazing attractions around the world or near you.",
       "tags": ["React Native", "Node.js", "PostgreSQL", "Google Maps API"],
       "image": "exploreNation.png",
-      "videoUrl": "https://streamable.com/e/tphr1t?loop=0&muted=1",
+      "videoUrl": "https://streamable.com/e/r3pm71?loop=0&muted=1",
       "codeUrl": "https://github.com/TannerGalloway/ExploreNation",
       "liveUrl": "#"
     },
+
     {
       "id": 3,
       "title": "Gourmet Guide",
       "description": "An application for users to explore and discover different foods from around the world.",
       "tags": ["React", "MealDB API"],
       "image": "gourmetGuide.png",
-      "videoUrl": "https://streamable.com/e/d97zph?loop=0&muted=1",
+      "videoUrl": "https://streamable.com/e/fp7drj?loop=0&muted=1",
       "codeUrl": "https://github.com/TannerGalloway/Gourmet-Guide",
       "liveUrl": "https://gourmet-guide-zpn6.onrender.com"
     },
+
     {
       "id": 4,
       "title": "Hype Games",
       "description": "A platform for gamers to get info about the latest games, including screenshots and trailers.",
-      "tags": ["JavaScript", "Jinja", "flask", "sqlite", "IGDBAPI"],
+      "tags": ["JavaScript", "Jinja", "Flask", "Sqlite", "IGDB API"],
       "image": "hypeGames.png",
-      "videoUrl": "https://streamable.com/e/1ki3tl?loop=0&muted=1",
+      "videoUrl": "https://streamable.com/e/j0m6w2?loop=0&muted=1",
       "codeUrl": "https://github.com/TannerGalloway/Hype-Games",
       "liveUrl": "#"
     },
+
     {
       "id": 5,
       "title": "Whats Eat",
@@ -52,19 +56,190 @@
         "Google Maps API"
       ],
       "image": "whatsEat.png",
-      "videoUrl": "https://streamable.com/e/kbh7w2?loop=0&muted=1",
+      "videoUrl": "https://streamable.com/e/sj5kr7?loop=0&muted=1",
       "codeUrl": "https://github.com/Greenfield-app/frontend",
       "liveUrl": "#"
     },
+
     {
       "id": 6,
       "title": "RuneBound",
       "description": "A Terminal based text adventure game where you play as a hero and must navigate a dungeon filled with monsters and treasure.",
       "tags": ["Java"],
       "image": "runeBound.png",
-      "videoUrl": "https://streamable.com/e/xc4zzo?loop=0&muted=1",
+      "videoUrl": "https://streamable.com/e/6330n0?loop=0&muted=1",
       "codeUrl": "https://github.com/TannerGalloway/Runebound",
       "liveUrl": "#"
+    }
+  ],
+
+  "testedApps": [
+    {
+      "id": 1,
+      "title": "Age of Empires II: Definitive Edition",
+      "studiosName": [
+        "Xbox Game Studios",
+        "World's Edge",
+        "Forgotten Empires",
+        "Tantalus Media",
+        "Wicked Witch"
+      ],
+      "testingFocus": [
+        "Console Port",
+        "AI Systems",
+        "Campaign",
+        "Game Mechanics",
+        "Performance",
+        "Multiplayer"
+      ],
+      "image": "aoe2DE.jpg",
+      "platforms": ["PC", "Xbox One X/S", "Xbox Series X/S"],
+      "hardware": [],
+      "devices": [],
+      "toolsMethods": [
+        "Azure DevOps",
+        "Xbox Dev Kit",
+        "Regression",
+        "Integration",
+        "Performance",
+        "Localization",
+        "Accessibility",
+        "Endurance"
+      ],
+      "liveUrl": "https://store.steampowered.com/app/813780/Age_of_Empires_II_Definitive_Edition/"
+    },
+
+    {
+      "id": 2,
+      "title": "Age of Empires III: Definitive Edition",
+      "studiosName": [
+        "Xbox Game Studios",
+        "World's Edge",
+        "Forgotten Empires",
+        "Tantalus Media"
+      ],
+      "testingFocus": [
+        "AI Systems",
+        "Campaign",
+        "Game Mechanics",
+        "Performance",
+        "Multiplayer"
+      ],
+      "image": "aoe3DE.jpg",
+      "platforms": ["PC"],
+      "hardware": [],
+      "devices": [],
+      "toolsMethods": [
+        "Azure DevOps",
+        "Regression",
+        "Integration",
+        "Performance",
+        "Localization",
+        "Accessibility",
+        "Endurance"
+      ],
+      "liveUrl": "https://store.steampowered.com/app/933110/Age_of_Empires_III_Definitive_Edition/"
+    },
+
+    {
+      "id": 3,
+      "title": "Forza Motorsport",
+      "studiosName": ["Xbox Game Studios", "Turn 10"],
+      "testingFocus": [
+        "Car Mechanics",
+        "Performance",
+        "Multiplayer",
+        "Graphics",
+        "Audio",
+        "Race Tracks / Race Circuits"
+      ],
+      "image": "forzaMotorsport.jpg",
+      "platforms": [],
+      "hardware": [
+        "PC",
+        "Nvidia GPU",
+        "Amd GPU",
+        "Intel GPU",
+        "Xbox Series X/S"
+      ],
+      "devices": [],
+      "toolsMethods": [
+        "Azure DevOps",
+        "Visual Studio",
+        "Xbox Dev Kit",
+        "Fidler",
+        "Regression",
+        "Integration",
+        "Performance",
+        "End to End",
+        "Compatibility",
+        "Configuration"
+      ],
+      "liveUrl": "https://store.steampowered.com/app/2440510/Forza_Motorsport/"
+    },
+
+    {
+      "id": 4,
+      "title": "Automatic Super Resolution (Auto SR)",
+      "studiosName": [
+        "Microsoft (Windows OS)",
+        "Windows Gaming",
+        "Xbox Game Studios"
+      ],
+      "testingFocus": [
+        "AI Upscaling",
+        "Performance Gains",
+        "Visual Quality",
+        "Game Compatibility",
+        "Gameplay Experience"
+      ],
+      "image": "windows11AutoSR.jpg",
+      "platforms": [],
+      "hardware": [
+        "Windows 11",
+        " Snapdragon® X Series CPU",
+        "Multiple Monitor Sizes & Resolutions"
+      ],
+      "devices": [],
+      "toolsMethods": [
+        "Python",
+        "Pandas",
+        "Visual Studio",
+        "Windows Insider",
+        "GPU Profiling",
+        "Frame Rate Analysis",
+        "Visual Comparison",
+        "Cross-Game Testing",
+        "Performance"
+      ],
+      "liveUrl": "https://support.microsoft.com/en-us/windows/automatic-super-resolution-5d6d95fa-cc02-4673-b62c-2c50f06385aa"
+    },
+
+    {
+      "id": 5,
+      "title": "Xbox Cloud Gaming",
+      "studiosName": ["Xbox Game Studios", "Microsoft Azure"],
+      "testingFocus": [
+        "Latency Testing",
+        "Stream Quality",
+        "Network Stability",
+        "Input Device Compatibility",
+        "Audio",
+        "Multiplayer",
+        "Cross-Platform",
+        "Mobile UI"
+      ],
+      "image": "xboxCloudGaming.jpg",
+      "platforms": [],
+      "hardware": [],
+      "devices": ["Windows PC", "Macbook", "iOS", "Android"],
+      "toolsMethods": [
+        "Azure DevOps",
+        "Regression",
+        "Performance",
+        "Input Latency"
+      ],
+      "liveUrl": "https://www.xbox.com/en-US/cloud-gaming"
     }
   ]
 }

@@ -7,7 +7,7 @@
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 
-This repository contains the code for my personal portfolio website, built using React and Vite. The site showcases my skills, projects, and provides a way to contact me.
+This repository contains the code for my personal portfolio website, built using React and Vite. The site showcases my skills, products i've tested, projects i've built, and provides a way to contact me.
 
 [Visit Portfolio](https://TannerGalloway.github.io/Portfolio)
 
@@ -15,8 +15,8 @@ This repository contains the code for my personal portfolio website, built using
 
 - **Hero Section:** An engaging introduction to grab visitors' attention.
 - **About Me:** Information about my background, interests, and career aspirations.
-- **Projects:** A curated list of my key projects, including descriptions, technologies used, and links to live demos or repositories.
-- **Skills:** An overview of my technical skillset (languages, frameworks, tools, etc.).
+- **Skills:** An overview of my technical skillset (languages, frameworks, testing methodologies, tools, etc.).
+- **Products & Projects:** A curated list of my key products i've tested and projects i've built, including descriptions, technologies used testing methodologies, and links to live demos or repositories.
 - **Contact Me:** A functional contact form allowing visitors to send me emails directly.
   - Integrated with **Formspree** for seamless email delivery without needing a dedicated backend.
 - **Responsive Design:** Fully responsive layout ensuring optimal viewing experience across all devices (desktops, tablets, and smartphones).

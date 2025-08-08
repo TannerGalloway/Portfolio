@@ -120,7 +120,7 @@ const ContactMe: React.FC = function ContactMe() {
                   required
                   disabled={state.submitting}
                   className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent text-white"
-                  placeholder="your.email@example.com"
+                  placeholder="name@example.com"
                 />
                 <ValidationError
                   prefix="Email"

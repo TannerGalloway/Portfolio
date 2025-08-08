@@ -9,17 +9,17 @@ const Hero: React.FC = function Hero() {
           <div className="mb-6">
             <div className="flex items-center space-x-2 text-sm font-mono text-gray-400 mb-2">
               <div className="h-px w-5 bg-green-500"></div>
-              <span>SOFTWARE DEVELOPER</span>
+              <span>QA ENGINEER | SOFTWARE DEVELOPER</span>
             </div>
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold xl:w-2/3 mb-6">
-            CRAFTING CODE FOR A CONNECTED WORLD
+            DEBUGGING REALITY, BUILDING POSSIBILITY
           </h1>
 
           <p className="text-gray-400 max-w-xl mb-8 text-lg">
-            I transform creative concepts into functional reality, bridging the
-            gap between imagination and technical implementation.
+            Delivering dependable software through sharp QA skills and hands-on
+            development.
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -33,7 +33,7 @@ const Hero: React.FC = function Hero() {
                 }
               }}
               className="px-6 py-3 bg-green-500 text-black font-medium rounded-md hover:bg-green-400 transition-colors duration-300 hero-button">
-              View Projects
+              View Work
             </a>
 
             <a
@@ -57,14 +57,17 @@ const Hero: React.FC = function Hero() {
             <div className="relative h-full w-full rounded-full border border-green-500/30 flex items-center justify-center">
               <div className="text-center">
                 <div className="font-mono text-sm text-green-500 mb-4">
-                  // Code. Create. Innovate.
+                  // CODE. TEST. REPEAT.
                 </div>
                 <div className="h-px w-16 mx-auto bg-green-500/50 mb-4"></div>
                 <div className="font-mono text-xs text-gray-400 mb-4">
                   Web Development
                 </div>
-                <div className="font-mono text-xs text-gray-400">
+                <div className="font-mono text-xs text-gray-400 mb-4">
                   Mobile Development
+                </div>
+                <div className="font-mono text-xs text-gray-400">
+                  Game Development
                 </div>
               </div>
             </div>

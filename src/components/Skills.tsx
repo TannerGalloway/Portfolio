@@ -1,16 +1,16 @@
 import type React from "react";
-import { Code, Server, Layout } from "lucide-react";
+import { Code, BugOff, PencilRuler } from "lucide-react";
 import skillsList from "../assets/skillsList.json";
 
 const Skills: React.FC = function Skills() {
   const getIcon = (index: number) => {
     switch (index) {
       case 0:
-        return <Layout className="h-6 w-6" />;
-      case 1:
-        return <Server className="h-6 w-6" />;
-      case 2:
         return <Code className="h-6 w-6" />;
+      case 1:
+        return <BugOff className="h-6 w-6" />;
+      case 2:
+        return <PencilRuler className="h-6 w-6" />;
       default:
         return null;
     }
@@ -25,11 +25,11 @@ const Skills: React.FC = function Skills() {
           <span>EXPERTISE</span>
         </div>
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          Skills & Technologies
+          Technical Skills from Both Sides of the Code
         </h2>
-        <p className="text-gray-400 max-w-2xl">
-          An overview of my technical skills, tools, and technologies that I
-          have experience with.
+        <p className="text-gray-400 max-w-3xl">
+          An overview of the technical skills I've developed through QA testing
+          and side project development.
         </p>
       </div>
 
@@ -44,7 +44,14 @@ const Skills: React.FC = function Skills() {
               <h3 className="text-xl font-bold">{skill.name}</h3>
             </div>
 
-            <ul className="space-y-2">
+            <ul
+              className="space-y-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-x-4 gap-y-2"
+              style={{
+                gridTemplateColumns:
+                  skill.items.length > 5
+                    ? "repeat(2, minmax(0, 1fr))"
+                    : "repeat(1, minmax(0, 1fr))",
+              }}>
               {skill.items.map((item, index) => (
                 <li
                   key={`skill ${index}`}
